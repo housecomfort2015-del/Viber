@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Перехід до Viber</title>
+
+<script>
+window.onload = function() {
+  setTimeout(function() {
+    window.location.href = "viber://chat?number=%2B380634435405";
+  }, 800);
+};
+</script>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  text-align: center;
+  padding: 30px;
+}
+.box {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  max-width: 420px;
+  margin: auto;
+}
+.button {
+  background: #7c4dff;
+  color: white;
+  padding: 15px;
+  border-radius: 30px;
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+  font-size: 18px;
+}
+.warning {
+  background: #fff3cd;
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 15px;
+  font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+<div class="box">
+  <h2>Відкриваємо Viber…</h2>
+
+  <div class="warning">
+    ⚠️ Якщо ви зайшли з TikTok і автоматична переадресація не спрацювала:<br><br>
+    1️⃣ Натисніть три крапки зверху<br>
+    2️⃣ Виберіть «Відкрити в браузері»<br>
+    3️⃣ Натисніть кнопку нижче
+  </div>
+
+  <a class="button" href="viber://chat?number=%2B380634435405">
+    Написати в Viber
+  </a>
+</div>
+</body>
+</html>
