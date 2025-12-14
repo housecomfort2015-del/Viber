@@ -3,7 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Написати у Viber</title>
+<title>Перехід до Viber</title>
+
+<script>
+window.onload = function() {
+  setTimeout(function() {
+    window.location.href = "viber://chat?number=%2B380964424243";
+  }, 800);
+};
+</script>
 
 <style>
 body {
@@ -22,26 +30,16 @@ body {
 .button {
   background: #7c4dff;
   color: white;
-  padding: 16px;
+  padding: 15px;
   border-radius: 30px;
   text-decoration: none;
   display: block;
   margin-top: 20px;
   font-size: 18px;
 }
-.button2 {
-  background: #4caf50;
-  color: white;
-  padding: 14px;
-  border-radius: 30px;
-  text-decoration: none;
-  display: block;
-  margin-top: 15px;
-  font-size: 15px;
-}
 .warning {
-  background: #e8f0fe;
-  padding: 14px;
+  background: #fff3cd;
+  padding: 15px;
   border-radius: 12px;
   margin-top: 15px;
   font-size: 14px;
@@ -51,20 +49,15 @@ body {
 
 <body>
 <div class="box">
-  <h2>Звʼязатися з нами</h2>
+  <h2>Відкриваємо Viber…</h2>
 
   <div class="warning">
-    Натисніть кнопку нижче, щоб написати нам у Viber 👇
+    ⚠️ Якщо автоматичний перехід не спрацював —<br>
+    натисніть кнопку нижче
   </div>
 
-  <!-- Основная кнопка -->
   <a class="button" href="viber://chat?number=%2B380964424243">
     Написати в Viber
-  </a>
-
-  <!-- Запасной вариант -->
-  <a class="button2" href="https://viber.me/380964424243">
-    Якщо не відкривається — натисніть тут
   </a>
 </div>
 </body>
