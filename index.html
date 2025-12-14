@@ -6,10 +6,10 @@
 <title>Перехід до Viber</title>
 
 <script>
-window.onload = function() {
-  setTimeout(function() {
+window.onload = function () {
+  setTimeout(function () {
     window.location.href = "viber://chat?number=%2B380964424243";
-  }, 800);
+  }, 1200);
 };
 </script>
 
@@ -37,6 +37,16 @@ body {
   margin-top: 20px;
   font-size: 18px;
 }
+.button2 {
+  background: #4caf50;
+  color: white;
+  padding: 15px;
+  border-radius: 30px;
+  text-decoration: none;
+  display: block;
+  margin-top: 15px;
+  font-size: 16px;
+}
 .warning {
   background: #fff3cd;
   padding: 15px;
@@ -52,14 +62,20 @@ body {
   <h2>Відкриваємо Viber…</h2>
 
   <div class="warning">
-    ⚠️ Якщо ви зайшли з TikTok і автоматична переадресація не спрацювала:<br><br>
-    1️⃣ Натисніть три крапки зверху<br>
-    2️⃣ Виберіть «Відкрити в браузері»<br>
+    ⚠️ Якщо ви зайшли з TikTok і нічого не відкрилось:<br><br>
+    1️⃣ Натисніть <b>⋯</b> у правому верхньому куті<br>
+    2️⃣ Оберіть <b>«Відкрити в браузері»</b><br>
     3️⃣ Натисніть кнопку нижче
   </div>
 
+  <!-- Основная кнопка -->
   <a class="button" href="viber://chat?number=%2B380964424243">
     Написати в Viber
+  </a>
+
+  <!-- Запасной вариант (работает даже когда TikTok блокирует) -->
+  <a class="button2" href="https://viber.me/380964424243">
+    Якщо не відкривається — натисніть тут
   </a>
 </div>
 </body>
